@@ -27,7 +27,7 @@ describe('Testando E-Commerce', () => {
     .click()
   })
 
-  it.only('Deve realizar a compra com sucesso', () => {
+  it('Deve realizar a compra com sucesso', () => {
     cy.contains('Sony vaio i7')
     .click()
     cy.get('.btn.btn-success.btn-lg')
