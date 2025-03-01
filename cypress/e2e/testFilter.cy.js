@@ -10,12 +10,10 @@ describe('Testando o filtro da aplicação', () => {
     ]
 
     categorias.forEach(({nome, produtoEsperado}) => {
-        it(`Deve filtrar todos os produtos com a categoria ${nome}`, () => {
-            cy.contains(nome)
-            .click()
+        cy.contains(nome)
+        .click()
 
-            cy.contains(produtoEsperado)
-            .should('be.visible')
-        })
+        cy.contains(produtoEsperado)
+        .should('be.visible')
     })
 }); 

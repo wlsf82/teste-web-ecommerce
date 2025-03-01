@@ -44,7 +44,7 @@ describe('Testando E-Commerce', () => {
       creditcard: "17439107268317236299",
       month: "December",
       year: "1999",
-    }
+}
 
     cy.buySuccess(date)
 
