@@ -10,7 +10,7 @@ describe('Testando a funcionalidade o carrinho da aplicação ', () => {
         {nome: '2017 Dell 15.6 Inch'},
         {nome: 'MacBook Pro'}
     ]
-
+    
     produtos.forEach(({nome}) => {
         it('Deve adicionar os produtos ao carrinho', () => {
             cy.contains('Laptops').click()
