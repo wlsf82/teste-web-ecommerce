@@ -16,4 +16,4 @@ describe('Testando o filtro da aplicação', () => {
         cy.contains(produtoEsperado)
         .should('be.visible')
     })
-}); 
+});

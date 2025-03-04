@@ -2,7 +2,7 @@ describe('Testando E-Commerce', () => {
   beforeEach(() => {
     cy.visit('https://www.demoblaze.com')
   });
-  it('Deve haver um titulo escrito "PRODUCT STORE', () => {
+  it('Deve haver um titulo escrito "PRODUCT STORE"', () => {
     cy.get('#nava')
     .should('be.visible')
   })
