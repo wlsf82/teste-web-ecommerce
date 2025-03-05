@@ -1,18 +1,24 @@
-Cypress.Commands.add('buySuccess', (date) => {
-    cy.get('#name').type(date.name)
-    cy.get('#country').type(date.country)
-    cy.get('#city').type(date.city)
-    cy.get('#card').type(date.creditcard)
-    cy.get('#month').type(date.month)
-    cy.get('#year').type(date.year)
+Cypress.Commands.add('buy', ({ name, country, city, creditcard, month, year }) => {
+  cy.contains('button', 'Place Order').click()
+  cy.get('#name').type(name)
+  cy.get('#country').type(country)
+  cy.get('#city').type(city)
+  cy.get('#card').type(creditcard)
+  cy.get('#month').type(month)
+  cy.get('#year').type(year)
+  cy.contains('button', 'Purchase').click()
 })
 
-Cypress.Commands.add("registerSuccess", (dateRegister) => {
-    cy.get('#sign-username').type(dateRegister.username)
-    cy.get('#sign-password').type(dateRegister.password)
+Cypress.Commands.add("registerSuccess", (username, password) => {
+  cy.contains('a.nav-link', 'Sign up').click()
+  cy.get('#sign-username').type(username)
+  cy.get('#sign-password').type(password)
+  cy.contains('button', 'Sign up').click()
 })
 
-Cypress.Commands.add('loginSuccess', (dateLogin) =>{
-    cy.get('#loginusername').type(dateLogin.username)
-    cy.get('#loginpassword').type(dateLogin.password)   
+Cypress.Commands.add('login', (username, password) => {
+  cy.contains('a.nav-link', 'Log in').click()
+  cy.get('#loginusername').type(username)
+  cy.get('#loginpassword').type(password)
+  cy.contains('button', 'Log in').click()
 })
