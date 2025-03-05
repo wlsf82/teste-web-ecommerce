@@ -7,7 +7,7 @@ describe('Testando o filtro da aplicação', () => {
     { nome: 'Monitors', produto: 'Apple monitor 24' },
   ]
 
-  it('aplica filtros', () => {
+  it('Deve aplicar filtros', () => {
     categorias.forEach(({ nome, produto }) => {
 	    cy.contains(nome).click()
 
