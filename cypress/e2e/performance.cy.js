@@ -1,5 +1,5 @@
 describe('Performance', () => {
-  it('Deve carregar a pagina em menos de 2 segundos', () => {
+  it('Deve carregar a pagina em até 2 segundos', () => {
     cy.intercept('GET', `${Cypress.env('API_URL')}/entries`)
       .as('apiRequest')
 
