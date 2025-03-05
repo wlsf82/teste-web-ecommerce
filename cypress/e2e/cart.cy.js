@@ -11,7 +11,7 @@ describe('Carrinho de compras', () => {
   ]
 
   produtos.forEach(produto => {
-    it('Deve adicionar os produtos ao carrinho', () => {
+    it(`Deve adicionar o produto '${produto}' ao carrinho`, () => {
       cy.contains('a', 'Laptops').click()
       cy.contains('.card-title', produto).click()
       cy.contains('Add to cart', { timeout: 10000 }).click()
