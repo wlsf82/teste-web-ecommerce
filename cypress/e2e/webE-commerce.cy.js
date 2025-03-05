@@ -23,6 +23,9 @@ describe('Testando E-Commerce', () => {
     cy.buy(data)
 
     cy.contains('h2', 'Thank you for your purchase').should('be.visible')
+
     cy.contains('button', 'OK').click()
+
+    cy.get('.sweet-alert').should('exist')
   })
 })
