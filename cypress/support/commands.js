@@ -9,7 +9,7 @@ Cypress.Commands.add('buy', ({ name, country, city, creditcard, month, year }) =
   cy.contains('button', 'Purchase').click()
 })
 
-Cypress.Commands.add("registerSuccess", (username, password) => {
+Cypress.Commands.add("signup", (username, password) => {
   cy.contains('a.nav-link', 'Sign up').click()
   cy.get('#sign-username').type(username)
   cy.get('#sign-password').type(password)

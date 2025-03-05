@@ -5,6 +5,6 @@ describe('Testando register da aplicação', () => {
     const username = `User${Math.floor(Math.random() * 1000)}`
     const password = Math.random().toString(36).slice(-8)
 
-    cy.registerSuccess(username, password)
+    cy.signup(username, password)
   })
 })
