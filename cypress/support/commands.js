@@ -19,6 +19,6 @@ Cypress.Commands.add("registerSuccess", (username, password) => {
 Cypress.Commands.add('login', (username, password) => {
   cy.contains('a.nav-link', 'Log in').click()
   cy.get('#loginusername').type(username)
-  cy.get('#loginpassword').type(password)
+  cy.get('#loginpassword').type(password, { log: false })
   cy.contains('button', 'Log in').click()
 })
