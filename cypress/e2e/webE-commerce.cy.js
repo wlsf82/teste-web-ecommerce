@@ -12,12 +12,12 @@ describe('Testando E-Commerce', () => {
 
   it('Deve realizar a compra com sucesso', () => {
     const data = {
-      name: "Nathan Henrique",
-      country: "Brazil",
-      city: "Santo André",
-      creditcard: "17439107268317236299",
-      month: "December",
-      year: "1999",
+      name: 'Nathan Henrique',
+      country: 'Brazil',
+      city: 'Santo André',
+      creditcard: '17439107268317236299',
+      month: 'December',
+      year: '1999',
     }
 
     cy.buy(data)
