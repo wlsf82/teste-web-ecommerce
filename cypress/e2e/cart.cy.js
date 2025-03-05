@@ -1,4 +1,4 @@
-describe('Testando a funcionalidade o carrinho da aplicação', () => {
+describe('Carrinho de compras', () => {
   beforeEach(() => cy.visit('/'))
 
   const produtos = [

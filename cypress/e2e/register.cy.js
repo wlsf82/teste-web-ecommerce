@@ -1,4 +1,4 @@
-describe('Testando register da aplicação', () => {
+describe('Registro', () => {
   beforeEach(() => cy.visit('/'))
 
   it('Deve realizar o registro com sucesso', () => {

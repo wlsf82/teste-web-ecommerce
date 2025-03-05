@@ -1,4 +1,4 @@
-describe('Testando o login da aplicação', () => {
+describe('Login', () => {
   beforeEach(() => cy.visit('/'))
 
   it('Deve realizar o login com sucesso', () => {

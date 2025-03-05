@@ -1,4 +1,4 @@
-describe('Testando E-Commerce', () => {
+describe('e-Commerce', () => {
   beforeEach(() => {
     cy.visit('/')
     cy.contains('Sony vaio i7').click()

@@ -1,4 +1,4 @@
-describe('Testando o filtro da aplicação', () => {
+describe('Filtragem', () => {
   beforeEach(() => cy.visit('/'))
 
   const categorias = [

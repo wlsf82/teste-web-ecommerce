@@ -1,4 +1,4 @@
-describe('Teste de responsividade', () => {
+describe('Responsividade', () => {
   const viewports = ['iphone-6', 'ipad-2', [1920, 1080]]
 
   viewports.forEach((size) => {
