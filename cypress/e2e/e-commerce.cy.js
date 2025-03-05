@@ -15,7 +15,7 @@ describe('e-Commerce', () => {
   })
 
   it('Deve realizar a compra com sucesso', () => {
-    const data = {
+    const orderInfo = {
       name: 'Nathan Henrique',
       country: 'Brazil',
       city: 'Santo André',
@@ -24,7 +24,7 @@ describe('e-Commerce', () => {
       year: '1999',
     }
 
-    cy.buy(data)
+    cy.buy(orderInfo)
 
     cy.contains('h2', 'Thank you for your purchase').should('be.visible')
 
