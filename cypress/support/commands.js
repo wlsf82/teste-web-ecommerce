@@ -11,14 +11,14 @@ Cypress.Commands.add('buy', ({ name, country, city, creditcard, month, year }) =
 
 Cypress.Commands.add("signup", (username, password) => {
   cy.contains('a.nav-link', 'Sign up').click()
-  cy.get('#sign-username').type(username)
-  cy.get('#sign-password').type(password)
+  cy.get('#sign-username').type(username, { delay: 0 })
+  cy.get('#sign-password').type(password, { delay: 0 })
   cy.contains('button', 'Sign up').click()
 })
 
 Cypress.Commands.add('login', (username, password) => {
   cy.contains('a.nav-link', 'Log in').click()
-  cy.get('#loginusername').type(username)
-  cy.get('#loginpassword').type(password, { log: false })
+  cy.get('#loginusername').type(username, { delay: 0 })
+  cy.get('#loginpassword').type(password, { delay: 0, log: false })
   cy.contains('button', 'Log in').click()
 })
