@@ -11,7 +11,7 @@ describe('Filtragem', () => {
     it(`Deve aplicar filtros para ${nome}`, () => {
       cy.contains(nome).click()
 
-      cy.contains(produto).should('be.visible')
+      cy.contains('.card', produto).should('be.visible')
     })
   })
 })
