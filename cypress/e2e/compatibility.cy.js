@@ -1,7 +1,7 @@
 describe('Responsividade', () => {
   const viewports = ['iphone-6', 'ipad-2', [1920, 1080]]
 
-  viewports.forEach((size) => {
+  viewports.forEach(size => {
     it(`Deve exibir o título no viewport: ${size}`, () => {
       cy.visit('/')
 
