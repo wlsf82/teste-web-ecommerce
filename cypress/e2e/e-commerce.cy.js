@@ -9,7 +9,7 @@ describe('e-Commerce', () => {
   })
 
   it('Deve remover o item do carrinho ', () => {
-    cy.contains('Delete').click()
+    cy.contains('table tbody td a', 'Delete').click()
 
     cy.contains('table tbody', 'Sony vaio i7').should('not.exist')
   })
