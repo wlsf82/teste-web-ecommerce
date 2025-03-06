@@ -1,4 +1,4 @@
-describe('Filtragem', () => {
+describe('Filtro por tipo de produto', () => {
   beforeEach(() => cy.visit('/'))
 
   const categorias = [
