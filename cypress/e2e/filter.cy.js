@@ -9,7 +9,7 @@ describe('Filtro por tipo de produto', () => {
 
   categorias.forEach(({ nome, produto }) => {
     it(`Deve aplicar filtros para ${nome}`, () => {
-      cy.contains(nome).click()
+      cy.contains('.list-group a', nome).click()
 
       cy.contains('.card', produto).should('be.visible')
     })
