@@ -8,7 +8,7 @@ describe('Carrinho de compras', () => {
 
     cy.contains('a', 'Laptops').click()
     cy.contains('.card-title', 'MacBook Pro').click()
-    cy.contains('Add to cart', { timeout: 10000 }).click()
+    cy.contains('a', 'Add to cart', { timeout: 10000 }).click()
 
     cy.get('@alertShown').should('have.been.calledOnceWith', 'Product added')
   })

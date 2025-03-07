@@ -1,7 +1,7 @@
 describe('e-Commerce', () => {
   beforeEach(() => {
     cy.visit('/')
-    cy.contains('Sony vaio i7').click()
+    cy.contains('.card-title', 'Sony vaio i7').click()
     cy.contains('a', 'Add to cart').click()
     cy.contains('a.nav-link', 'Cart').click()
 
