@@ -8,7 +8,7 @@ Fork refatorado do projeto do Nathanael.
 
 > Utilizei as versão `2.42.1`, `v22.13.1` and `10.9.2` do git, Node.js e npm, respectivamente. Sugiro utilizar as mesmas ou versões mais recentes de suporte de longo prazo.
 
-## Instalção
+## Instalação
 
 Execute `npm install` (ou `npm i` para a versão curta) para instalar as dependências de desenvolvimento.
 
@@ -20,7 +20,7 @@ Execute `npm test` (ou `npm t` para a versão curta) para rodar os testes em mod
 
 Ou, execute `npm run cy:open` para abrir a Cypress App e executar os testes em modo interativo.
 
-## Suporete este projeto
+## Suporte este projeto
 
 Se você quer suportar este projeto, deixe uma ⭐.
 
